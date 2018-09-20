@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name"> Счетчик студентов </string>
+    <string name="txt_students">студентов</string>
+    <string name="btn_students">Добавить студента</string>
+    <string name="btn_null">Обнулить счётчик</string>
+</resources>
