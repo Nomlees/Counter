@@ -84,14 +84,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onRestoreInstanceState(Bundle saveInstanseState){
-        super.onRestoreInstanceState(saveInstanseState);
-        if (saveInstanseState != null &&  saveInstanseState.containsKey("counter")){
-            counter = saveInstanseState.getInt("counter");
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        if (savedInstanceState != null &&
+                savedInstanceState.containsKey("counter")) {
+            counter = savedInstanceState.getInt("counter");
+        }
             Log.d(TAG, "onRestoreInstanceState");
             Toast.makeText(this, "onRestoreInstanceState", Toast.LENGTH_LONG).show();
         }
-    }
+
 
 
     private void resetUI(){
